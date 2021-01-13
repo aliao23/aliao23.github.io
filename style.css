@@ -598,37 +598,6 @@ footer p a:hover {
     color: #6e9059;
 
 }
-.yb-link {
-    color: #0c063d;
-}
-
-.photo {
-    display: block;
-    position: relative;
-    margin-bottom: 1.5em;
-    width: 100%;
-    border-radius: 0.625vw;
-
-    transition: 0.28s;
-}
-.photo:hover {
-    transform: scale(1.01);
-    transition: 0.28s;
-}
-
-/* individual cases */
-.ig-title {
-    background: linear-gradient(45deg, #FF6868 0%, #FF7676 33.33%, #F54EA2 66.67%, #FF41A0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    margin-bottom: 1.5vw;
-}
-
-.ig-link {
-    color: #C13584;
-}
 
 /* individual case studies */
 .case-title {
@@ -644,6 +613,9 @@ footer p a:hover {
     color: #e38914;
 }
 
+.yb-link {
+    color: #da2a8d;
+}
 
 /* other formats */
 .content-web {
