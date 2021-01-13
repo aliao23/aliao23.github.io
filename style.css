@@ -591,11 +591,15 @@ footer p a:hover {
 }
 
 .tduoc-link {
-    color: #759ae0;
+    color: #6869df;
 }
 
 .hist-link {
     color: #6e9059;
+
+}
+.yb-link {
+    color: #0c063d;
 }
 
 .photo {
