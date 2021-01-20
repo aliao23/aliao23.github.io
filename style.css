@@ -270,10 +270,6 @@ video {
 }
 
 .ft-img {
-    height: 100%;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 2em;
 }
 
@@ -685,6 +681,10 @@ footer p a:hover {
         border-radius: 0.625vw;
 
         transition: 0.28s;
+    }
+    
+    .ft-img {
+    padding-left: 4em;
     }
 }
 
