@@ -129,7 +129,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
         font-size: 70px;
     }
     h1c {
-        font-size: 50px;
+        font-size: 42px;
     }
     h2 {
         font-size: 60px;
@@ -141,7 +141,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
         font-size: 24px;
     }
     h5 {
-        font-size: 20px;
+        font-size: 18px;
     }
     h6 {
         font-size: 16px;
@@ -385,6 +385,29 @@ video {
   transform: translateY(-50%);
 }
 
+.exp-connect {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.exp-connect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(200deg,
+    #12c2e9,
+    #c471ed,
+    #f64f59
+  );
+  transition: transform 0.5s;
+  z-index: -1;
+}
+.exp-connect:hover::before {
+  transform: translateY(-50%);
+}
 
 /*
 .exp-caco3 {
@@ -400,8 +423,32 @@ video {
     background: #edeeee;
 }
 .exp-yb {
-    background: #0c063d;
+    background: #223b1b;
 }
+
+.exp-nps:hover {
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'> 🔒</text></svg>") 16 0,auto; 
+}
+.exp-nps {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.exp-nps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(200deg, #046e52, #588e3d, #c66c38);
+  transition: transform 0.5s;
+  z-index: -1;
+}
+.exp-nps:hover::before {
+  transform: translateY(-50%);
+}
+
 
 /* .exp-ascent {
     background: linear-gradient(200deg, #efb834, #e76438, #e13f3c);
@@ -431,15 +478,6 @@ video {
     position: relative;
     margin-bottom: 1.5em;
     height: 25%;
-}
-
-.resume-container {
-    padding-top: 40%;
-    position: relative;
-    overflow: hidden;
-    width: 70%;
-    margin: 0 auto;
-
 }
 
 iframe {
@@ -548,7 +586,7 @@ footer p a:hover {
 
 /* gradients */
 .keck {
-    background: -webkit-linear-gradient(bottom left,  #38a886 0%, #205791 66.67%, #FF41A0 100%); 
+    background: -webkit-linear-gradient(left,  #38a886 0%, #56b1d1 66.67%, #FF41A0 100%); 
     /* background-image: linear-gradient(45deg, #38a886 0%, #2f98ad 33.33%, #205791 66.67%, #FF41A0 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
