@@ -432,12 +432,11 @@ video {
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
   overflow: hidden;
-  background: #addad5;
+  background: #FAFAFA;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  color: white;
 }
 .exp-sow:before {
   content: "";
