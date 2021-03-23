@@ -190,14 +190,6 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
     width: 100%;
 }
 
-/* image */
-
-.img {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  width: 100%;
-}
-
 .imgcontainer {
   width: 100%;
   text-align:center;
