@@ -86,12 +86,6 @@ a {
     transition: 0.28s;
 }
 
-a.textLink {
-    border-bottom: 0.125rem dotted;
-    display: inline-block;
-    line-height: 1.2;
-}
-
 h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, i::selection, sub::selection, sup::selection, featurename::selection, li::selection, a::selection, span::selection, br::selection, strong::selection, img::selection, html::selection {
     background: rgba(218,138,177,0.1);
 }
@@ -858,6 +852,13 @@ footer p a:hover {
 
 @media screen and (min-width: 1000px) {
     /* GLOBAL */
+
+    a.textLink {
+    border-bottom: 0.125rem dotted;
+    display: inline-block;
+    line-height: 1.2;
+}
+
     .content-web {
         display: inline;
     }
@@ -880,5 +881,4 @@ footer p a:hover {
         height: 25em;
         width: 25em;
     }
-
 }
