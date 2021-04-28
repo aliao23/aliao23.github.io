@@ -185,6 +185,15 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
   width: 100%;
 }
 
+.smallcaseimg {
+  height: 150px;
+  padding: 0.5em;
+}
+
+.caseimg {
+  height: 300px;
+}
+
 .imgcontainer {
   width: 100%;
   text-align:center;
@@ -545,9 +554,6 @@ video {
     background: #223b1b;
 }
 
-.exp-nps:hover {
-    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='60' viewport='0 0 100 100' style='fill:black;font-size:30px;'><text y='50%'> 🔒</text></svg>") 16 0,auto; 
-}
 .exp-nps {
   position: relative;
   z-index: 1;
@@ -761,6 +767,10 @@ footer p a:hover {
     color: #ed705c;
 }
 
+.nps-link {
+  color: #046e52;
+}
+
 .valorant-link {
     color: #ff4655;
 }
@@ -881,4 +891,5 @@ footer p a:hover {
         height: 25em;
         width: 25em;
     }
+
 }
