@@ -71,6 +71,13 @@ p, li, featurename {
     margin: 0;
 }
 
+.caption {
+  font-family: 'IBM Plex Sans';
+  font-size: 18px;    
+  margin-bottom: 0.75em;
+  font-style: italic;
+}
+
 sup, sub {
   vertical-align: baseline;
   position: relative;
