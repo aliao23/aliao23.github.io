@@ -520,45 +520,25 @@ video {
 }
 
 .exp-sow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
+  z-index: 1;
   overflow: hidden;
-  background: #FAFAFA;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
 }
-.exp-sow:before {
+.exp-sow::before {
   content: "";
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: #ffe6ec;
-  border-radius: 100%;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(190deg, #ffe0c7, #def2fa, #ffe7a1);
+  transition: transform 0.5s;
+  z-index: -1;
 }
-.exp-sow:hover, .exp-sow:focus, .exp-sow:active {
-  color: black;
+.exp-sow:hover::before {
+  transform: translateY(-50%);
 }
-.exp-sow:hover:before, .exp-sow:focus:before, .exp-sow:active:before {
-  -webkit-transform: scale(2);
-  transform: scale(2);
-}
+
 
 .exp-archive {
     background: #edeeee;
@@ -772,6 +752,7 @@ footer p a:hover {
 }
 
 /* individual case studies */
+
 .case-title {
     color: #0f1923;
 }
