@@ -287,6 +287,12 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 
 /* end lightbox */
 
+(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .yt {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -300,8 +306,8 @@ html {
     background: var(--white);
     overflow-x: hidden;
     margin: 3vw 6vw;
-    
     animation: 1.0s ease-in fade-in;
+    scroll-behavior: smooth;
 }
 img {
     -webkit-user-drag: none;
@@ -375,6 +381,49 @@ video {
 .summary-item {
     margin-bottom: 1.5em;
 }
+
+/* BEGIN STICKY MENU */
+
+.main-menu {
+  position: relative;
+  height: 100%;
+  top: 33%;
+  width:300px;
+  float: left;
+}
+
+nav ul, nav li {
+  padding-left: 10%;
+  list-style: none;
+  font-family: "Lora";
+  font-size: 14px;
+  line-height: 2em;
+}
+
+/* Highlight when on Section*/
+.main-menu li:hover>a {
+  opacity: 0.5;
+}
+
+/*Sticky Navigation Menu*/
+@media (min-height: 30rem) {
+  nav ul li i{
+  position: sticky;
+  }
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  height: 100%;
+}
+
+#navbar {
+  height: 100%;
+}
+
+/* END STICKY MENU */
 
 .subtitle {
     margin-bottom: 0.75em;
