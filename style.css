@@ -382,49 +382,6 @@ video {
     margin-bottom: 1.5em;
 }
 
-/* BEGIN STICKY MENU */
-
-.main-menu {
-  position: relative;
-  height: 100%;
-  top: 33%;
-  width:300px;
-  float: left;
-}
-
-nav ul, nav li {
-  padding-left: 10%;
-  list-style: none;
-  font-family: "Lora";
-  font-size: 14px;
-  line-height: 2em;
-}
-
-/* Highlight when on Section*/
-.main-menu li:hover>a {
-  opacity: 0.5;
-}
-
-/*Sticky Navigation Menu*/
-@media (min-height: 30rem) {
-  nav ul li i{
-  position: sticky;
-  }
-}
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  height: 100%;
-}
-
-#navbar {
-  height: 100%;
-}
-
-/* END STICKY MENU */
-
 .subtitle {
     margin-bottom: 0.75em;
     text-transform: uppercase;
@@ -919,5 +876,40 @@ footer p a:hover {
         height: 25em;
         width: 25em;
     }
+    
+    /* BEGIN STICKY MENU */
 
+    .main-menu {
+      position: relative;
+      height: 100%;
+      top: 33%;
+      width:300px;
+      float: left;
+    }
+
+    nav ul, nav li {
+      padding-left: 10%;
+      list-style: none;
+      font-family: "Lora";
+      font-size: 14px;
+      line-height: 2em;
+    }
+
+    /* Highlight when on Section*/
+    .main-menu li:hover>a {
+      opacity: 0.5;
+    }
+
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      height: 100%;
+    }
+
+    #navbar {
+      height: 100%;
+    }
+
+    /* END STICKY MENU */
 }
