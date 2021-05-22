@@ -25,37 +25,6 @@ coded with love in an embarrassingly long amount of time by yours truly
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
 
-
-    <!-- js, if i had any -->
-    <script>
-        window.onscroll = function () {
-            scrollRotate();
-            scrollRotate2();
-            scrollRotate3();
-            scrollRotate4();
-        };
-
-        function scrollRotate() {
-            let image = document.getElementById("phone");
-            image.style.transform = "rotate(" + window.pageYOffset/60 + "deg)";
-        }
-
-        function scrollRotate2() {
-            let image2 = document.getElementById("phone2");
-            image2.style.transform = "rotate(" + window.pageYOffset/-60 + "deg)";
-        }
-
-        function scrollRotate3() {
-            let image3 = document.getElementById("phone3");
-            image3.style.transform = "rotate(" + window.pageYOffset/60 + "deg)";
-        }
-
-        function scrollRotate4() {
-            let image4 = document.getElementById("phone4");
-            image4.style.transform = "rotate(" + window.pageYOffset/-60 + "deg)";
-        }
-    </script>
-
     <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="https://emoji-pics.s3.us-east-2.amazonaws.com/emoji-pics/apple/sparkles-apple.png"/>
 
@@ -110,7 +79,7 @@ coded with love in an embarrassingly long amount of time by yours truly
         </div>
     </div>
 
-    <div class="c6 divider"></div>
+    <div class="c6 divider"><section id="starthere"></section></div>
 
     <div class="c6">
         <div class="section">
@@ -119,11 +88,25 @@ coded with love in an embarrassingly long amount of time by yours truly
             <img id="phone4" src="assets/sow6.png" class="mobileimg">
             <img id="phone3" src="assets/sow7.png" class="mobileimg">
             </div>
+    </div>
 
-    <div class="c6 divider"></div>
+    <div id="navbar">
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#intro">Intro</a></li>
+          <li><a href="#problem">Defining the problem</a></li>
+          <li><a href="#analysis">Competitive analysis</a></li>
+          <li><a href="#personas">Personas</a></li>
+          <li><a href="#ideating">Ideating and wireframing</a></li>
+          <li><a href="#final">Prototyping</a></li>
+        </ul>
+      </nav>
+    </div>
 
+    <div class="c6">
+        <div class="c6 divider"></div>
         <div class="section">
-            <h5 class="subtitle">Intro</h5>
+            <h5 class="subtitle"><section id="intro">Intro</section></h5>
                 <p>
                 I signed up for the 🍁 UW/UX <a href="https://twitter.com/uwuxwaterloo/status/1360420334827151361" onclick="return false;" rel="noopener" class="link sow-link textLink">TILE Designathon</a>, which took place over the weekend of March 12-14. This was my third hackathon, and despite the (multiple) hitches along the way (time zone differences, 0 caffeine consumption, fighting with Figma auto-layout), I managed to learn a lot and have fun with a great team of people that I had never met before. ❤️</p><br>
                 <img src="assets/tile.png" class='img'>
@@ -138,12 +121,12 @@ coded with love in an embarrassingly long amount of time by yours truly
     <div class="c6 divider"></div>
 
         <div class="section">
-            <h5 class="subtitle">Defining the problem</h5>
-            <p>In <a href="https://www.fca.org.uk/publication/research/financial-lives-survey-2017.pdf" onclick="return false;" rel="noopener" class="link sow-link textLink">2017</a>, the UK Financial Conduct Authority found that only a <strong>fifth</strong> of the 18-24 population "felt as confident as older adults in their ability to choose pensions, investments or mortgages by themselves." Moreover, the great majority of 18-24 year olds "had not had much time to build up savings," and as a result had "little protection against unexpected life events."
-            </p><br>
+            <h5 class="subtitle"><section id="problem">Defining the problem</section></h5>
+            <p>In <a href="https://www.fca.org.uk/publication/research/financial-lives-survey-2017.pdf" onclick="return false;" rel="noopener" class="link sow-link textLink">2017</a>, the UK Financial Conduct Authority found that only a <strong>fifth</strong> of the 18-24 population "felt as confident as older adults in their ability to choose pensions, investments or mortgages by themselves."</p><br>
             <p>
-            Although none of us are very familiar with fintech, we wanted to create an educational tool for a younger age range (14+), and imagined something that would share the simplicity and effectiveness of <a href='https://www.duolingo.com/' target="_blank" rel="noopener" class="link sow-link textLink">Duolingo</a>.</p><br>
-            <p>We looked at research studies such as <i>Lührmann, Serra-Garcia and Winter (2013)</i>, which found that teenagers’ interest is a first step towards increasing their financial knowledge and engagement. Since the literature we read emphasized motivation as a major factor in developing financial literacy, we decided that a gamified approach could be key to encouraging consistency and long-term learning.
+            Although none of us were very familiar with fintech, we wanted to create an educational tool for a younger audience (14+), and imagined something that would share the simplicity and effectiveness of <a href='https://www.duolingo.com/' target="_blank" rel="noopener" class="link sow-link textLink">Duolingo</a>.</p><br>
+            <p>We looked at research studies such as <i>Lührmann, Serra-Garcia and Winter (2013)</i>, which found that <strong>teenagers’ interest</strong> is a first step towards increasing their financial knowledge and engagement.</p><br>
+            <p>Since the literature we read emphasized motivation as a major factor in developing financial literacy, we decided that <strong>a gamified approach could be key to encouraging consistency and long-term learning</strong>.
             </p>
 
         </div>
@@ -151,7 +134,7 @@ coded with love in an embarrassingly long amount of time by yours truly
     <div class="c6 divider"></div>
 
         <div class="section" >
-            <h5 class="subtitle">Competitive analysis</h5>
+            <h5 class="subtitle"><section id="analysis">Competitive analysis</section></h5>
             <p>
             We looked at 13 similar apps and websites, ranging from <a href='https://www.wealthsimple.com/en-ca/' target="_blank" rel="noopener" class="link sow-link textLink">Wealthsimple</a>, a well-known Canadian investing platform for individuals that have no prior experience, to <a href='https://roostermoney.com/gb/' target="_blank" rel="noopener" class="link sow-link textLink">RoosterMoney</a>, a British pocket money app. We then simplified the most notable features and ideas into four bullet points, or key takeaways:
             <ul>
@@ -169,7 +152,7 @@ coded with love in an embarrassingly long amount of time by yours truly
             <div class="c6 divider"></div>
 
         <div class="section">
-            <h5 class="subtitle">Personas</h5>
+            <h5 class="subtitle"><section id="personas">Personas</section></h5>
             <p>
             Time constraints meant that we weren't able to conduct user interviews, so we took insights and quotes from the research studies we read to develop five personas with ages ranging from 15 to 27.
             </p>
@@ -200,7 +183,7 @@ coded with love in an embarrassingly long amount of time by yours truly
     <div class="c6 divider"></div>
 
         <div class="section">
-            <h5 class="subtitle">Ideating and wireframing</h5>
+            <h5 class="subtitle"><section id="ideating">Ideating and wireframing</section></h5>
             <p>We really liked the "piggy bank as mascot" concept, and brainstormed a bunch of potential names for our app (sadly, COINK was already taken). We decided to go with with <strong>sow</strong>, in the context of both a female pig as well as the verb used in the common idiom "reap what you sow," which we felt was especially applicable to what we were trying to accomplish.</p>
             <img alt="Name brainstorm" src="assets/sowb.png" class="img">
             <div class='caption sow-link'>Brainstorming product names</div><br>
@@ -231,7 +214,7 @@ coded with love in an embarrassingly long amount of time by yours truly
         <div class="c6 divider"></div>
 
             <div class="section">
-                <h5 class="subtitle">Prototyping</h5>
+                <h5 class="subtitle"><section id="final">Prototyping</section></h5>
 
                 <a href='#sowb2'><img src="assets/sowb2.png" class='img'></a>
                 <a href='#katsu' class='lightbox' id='sowb2'><span style="background-image:url('assets/sowb2.png')"></span></a>
@@ -292,7 +275,49 @@ coded with love in an embarrassingly long amount of time by yours truly
           duration: 1300,
         })
     </script>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
 
+        window.addEventListener("scroll", function() {
+          var elementTarget = document.getElementById("starthere");
+          if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+            navbar.classList.add("sticky");
+            navbar.style.display = "block";
+          } else {
+            navbar.style.display = "none";
+            }
+        });
+
+        window.onscroll = function () {
+            scrollRotate();
+            scrollRotate2();
+            scrollRotate3();
+            scrollRotate4();
+            stickyNav();
+        };
+
+        function scrollRotate() {
+            let image = document.getElementById("phone");
+            image.style.transform = "rotate(" + window.pageYOffset/60 + "deg)";
+        }
+
+        function scrollRotate2() {
+            let image2 = document.getElementById("phone2");
+            image2.style.transform = "rotate(" + window.pageYOffset/-60 + "deg)";
+        }
+
+        function scrollRotate3() {
+            let image3 = document.getElementById("phone3");
+            image3.style.transform = "rotate(" + window.pageYOffset/60 + "deg)";
+        }
+
+        function scrollRotate4() {
+            let image4 = document.getElementById("phone4");
+            image4.style.transform = "rotate(" + window.pageYOffset/-60 + "deg)";
+        }
+
+    </script>
 
 </body>
 
