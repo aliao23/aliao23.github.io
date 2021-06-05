@@ -59,7 +59,7 @@ h5 {
 h6 {
     font-family: 'IBM Plex Sans';
     font-size: 14px;    
-    font-weight: bold;
+    font-weight: normal;
     line-height: inherit;
     margin: 0;
 }
@@ -377,6 +377,9 @@ video {
     width: 80%;
 }
 
+.sectioncolour {
+  background-color: yellow;
+}
 
 .summary-item {
     margin-bottom: 1.5em;
@@ -419,13 +422,21 @@ video {
 }
 
 .exp h1c {
-    width: 90%;
+    line-height: 1.7em;
 }
 
-.exp h5 {
-    padding: 0 1em;
-    width: 70%;
+.feature-logo {
+    height: 50%;
+    z-index: -1;
+    margin-bottom: 20%;
 }
+
+.feature-product {
+    height: 50%;
+    z-index: -1;
+    margin-bottom: 30%;
+}
+
 .exp-content {
     display: flex;
     flex-direction: column;
@@ -434,14 +445,47 @@ video {
     height: 100%;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     z-index: 2;
 }
-.exp-title {
-    vertical-align: top;
-    text-align: left;
+
+.exp-wrapper {
+    position: absolute;
+    bottom: 3em;
+    width: 80%;
 }
 
+.mainlabelcontainer {
+    width: 80%;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+}
+
+.mainlabeltag {
+    background-color: rgba(220, 220, 220, 0.3);
+    font-family: "IBM Plex Sans";
+    padding: 0.8em;
+    margin-right: 1.5em;
+    border-radius: 0.5em;
+}
+
+.labelcontainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+
+.labeltag {
+    background-color: rgba(220, 220, 220, 0.4);
+    font-family: "IBM Plex Sans";
+    padding: 1em;
+    margin-right: 2em;
+    border-radius: 0.5em;
+}
 
 .exp-valorant {
   background-color: #ff4655;
@@ -504,7 +548,7 @@ video {
   height: 200%;
   background: linear-gradient(200deg,
     #e9f0ec,
-    #c9c9c9,
+    #ffbb9e,
     #f64f59
   );
   transition: transform 0.5s;
@@ -597,13 +641,6 @@ video {
 .exp-ascent:hover::before {
   transform: translateY(-50%);
 }
-
-.feature-logo {
-    position: relative;
-    margin-bottom: 1.5em;
-    height: 25%;
-}
-
 
 /* footer */
 footer {
@@ -746,6 +783,7 @@ footer p a:hover {
 
 .case-title {
     color: #0f1923;
+    line-height: 2em;
 }
 
 .sow-link {
