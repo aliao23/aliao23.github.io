@@ -426,13 +426,13 @@ video {
 }
 
 .feature-logo {
-    height: 50%;
+    height: 36%;
     z-index: -1;
     margin-bottom: 20%;
 }
 
 .feature-product {
-    height: 50%;
+    height: 36%;
     z-index: -1;
     margin-bottom: 30%;
 }
