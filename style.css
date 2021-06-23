@@ -53,6 +53,7 @@ h5 {
     font-family: 'IBM Plex Sans';
     font-size: 16px;    
     font-style: normal;
+    font-weight: 500;
     line-height: inherit;
     margin: 0;
 }
@@ -127,7 +128,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 }
 @media screen and (min-width: 1000px) {
     h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
     h1c {
         font-size: 42px;
@@ -229,6 +230,33 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 .mobileimg {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+
+.appcontainer {
+    height: 600px;
+}
+
+.appstore {
+    width: 60%;
+    float: left;
+    overflow: auto;
+}
+
+.appstoreright {
+    width: 60%;
+    float: right;
+    overflow: auto;
+}
+
+.appstore video, .appstoreright video {
+    width: 80%;
+}
+
+.appstore:after, .appstoreright:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
@@ -389,6 +417,7 @@ video {
     margin-bottom: 0.75em;
     text-transform: uppercase;
     color: var(--gray-03);
+    font-weight: bold;
 }
 .divider {
     border-top: 1px solid var(--gray-01);
@@ -426,13 +455,13 @@ video {
 }
 
 .feature-logo {
-    height: 36%;
+    height: 50%;
     z-index: -1;
     margin-bottom: 20%;
 }
 
 .feature-product {
-    height: 36%;
+    height: 50%;
     z-index: -1;
     margin-bottom: 30%;
 }
@@ -453,6 +482,7 @@ video {
     position: absolute;
     bottom: 3em;
     width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .mainlabelcontainer {
@@ -609,7 +639,7 @@ video {
   left: 0;
   width: 200%;
   height: 200%;
-  background: linear-gradient(200deg, #046e52, #588e3d, #c66c38);
+  background: linear-gradient(200deg, #046e52, #588e3d, #2fbd6d);
   transition: transform 0.5s;
   z-index: -1;
 }
