@@ -200,7 +200,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 }
 
 .smallcaseimg {
-  height: 150px;
+  height: 200px;
   padding: 0.5em;
 }
 
@@ -211,6 +211,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 .imgcontainer {
   width: 100%;
   text-align:center;
+  align-items: center;
 }
 
 .fiveimg {
@@ -234,7 +235,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 
 
 .appcontainer {
-    height: 600px;
+    height: 35em;
 }
 
 .appstore {
@@ -247,9 +248,14 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
     width: 60%;
     float: right;
     overflow: auto;
+    text-align: right;
 }
 
-.appstore video, .appstoreright video {
+.appstore video{
+    width: 80%;
+}
+
+.appstoreright video {
     width: 80%;
 }
 
@@ -391,6 +397,7 @@ video {
 }
 
 /* case study */
+
 .summary {
     display: grid;
     grid-template-columns: 100%;
@@ -400,13 +407,31 @@ video {
     height: auto;
 }
 
+.testsummary:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .ft-img {
     padding-left: 2em;
     width: 80%;
 }
 
+.testft-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .sectioncolour {
   background-color: yellow;
+}
+
+.testsummary-item {
+    float: left;
+    width: 33.33%;
 }
 
 .summary-item {
@@ -495,8 +520,9 @@ video {
 }
 
 .mainlabeltag {
-    background-color: rgba(220, 220, 220, 0.3);
+    background-color: rgba(250, 250, 250, 0.3);
     font-family: "IBM Plex Sans";
+    color: black;
     padding: 0.8em;
     margin-right: 1.5em;
     border-radius: 0.5em;
@@ -631,6 +657,7 @@ video {
   z-index: 1;
   overflow: hidden;
 }
+
 .exp-nps::before {
   content: "";
   position: absolute;
@@ -638,14 +665,13 @@ video {
   left: 0;
   width: 200%;
   height: 200%;
-  background: linear-gradient(200deg, #046e52, #588e3d, #2fbd6d);
+  background: linear-gradient(200deg, #dfedbb, #83dec3, #76b6c2);
   transition: transform 0.5s;
   z-index: -1;
 }
 .exp-nps:hover::before {
   transform: translateY(-50%);
 }
-
 
 /* .exp-ascent {
     background: linear-gradient(200deg, #efb834, #e76438, #e13f3c);
@@ -663,7 +689,7 @@ video {
   left: 0;
   width: 200%;
   height: 200%;
-  background: linear-gradient(200deg, #e3b314, #e38914, #e76438, #8f3e2c);
+  background: linear-gradient(200deg, #fac61b, #fca028, #e76438, #e34319);
   transition: transform 0.5s;
   z-index: -1;
 }
@@ -915,7 +941,7 @@ footer p a:hover {
     }
     
     .ft-img {
-    padding-left: 4em;
+    padding-left: 7em;
     }
 }
 
