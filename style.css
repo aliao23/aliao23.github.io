@@ -480,13 +480,13 @@ video {
 }
 
 .feature-logo {
-    height: 50%;
+    height: 40%;
     z-index: -1;
     margin-bottom: 20%;
 }
 
 .feature-product {
-    height: 50%;
+    height: 40%;
     z-index: -1;
     margin-bottom: 30%;
 }
@@ -743,6 +743,7 @@ footer p a:hover {
 }
 
 /* archive */
+
 .acontainer {
     display: grid;
     grid-template-columns: repeat (4, 1fr);
@@ -766,6 +767,14 @@ footer p a:hover {
 }
 .acol4 {
     grid-column: 10 / span 3;
+}
+
+.acol1and2 {
+    grid-column: 1 / span 6;
+}
+
+.acol3and4 {
+    grid-column: 7 / span 6;
 }
 
 
