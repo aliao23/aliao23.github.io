@@ -187,6 +187,14 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 
 /* image */
 
+.factcontainer {
+    width: 100%;
+    background-image: url('https://gmedia.playstation.com/is/image/SIEPDC/destiny-2-forsaken-background-block-desktop-01-en-26mar21?$native$');
+    background-size: cover;
+    padding: 2em;
+    color: white;
+}
+
 .img {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
@@ -735,11 +743,71 @@ footer p a:hover {
 
 /* info */
 .avi {
-    margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
     height: 15em;
     width: 15em;
+    margin-top: 0px!important;
+}
+
+.cardwrapper {
+    /* 
+    width: 100%; 
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    */
+    width: 240px;
+    justify-content: left;
+    text-align: left;
+}
+
+.scene {
+    /*
+    width: 100%;
+    height: 200px;
+    */
+    perspective: 600px;
+}
+
+.card {
+    height: 336px;
+    width: 240px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    display: inline-block;
+}
+
+.card2 {
+    height: 336px;
+    width: 240px;
+    display: inline-block;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+
+.card__face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card__face--back {
+    transform: rotateY(180deg);
+}
+
+.card2__face--back {
+    transform: rotateY(180deg);
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg);
+}
+
+.card2.is-flipped {
+    transform: rotateY(180deg);
 }
 
 /* archive */
@@ -824,6 +892,19 @@ footer p a:hover {
     transition: 0.2s;
 */
 
+}
+
+.ava2 {
+    background: linear-gradient(45deg, #FF6868 0%, #f5abc0 33.33%, #65c9a8 66.67%, #FF41A0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 1.5vw;
+}
+
+.ava2:hover {
+    cursor: url("https://cdn.discordapp.com/attachments/272131508049805312/788551214375632906/wink1.png"), auto;
 }
 
 .cmc-link {
@@ -935,10 +1016,6 @@ footer p a:hover {
         margin-bottom: 3em;
     }
     
-    .avi {
-        height: 35vw;
-        width: 35vw;
-    }
     .photo {
         display: inline;
         margin-right: 1.5vw;
