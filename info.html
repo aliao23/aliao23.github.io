@@ -76,15 +76,15 @@ coded with love in an embarrassingly long amount of time by yours truly
     <div class="c6 divider"></div>
 
     <div class="c12">
-
-        <h5 class="subtitle avi2">CHOOSE A CARD... ✨</h5><br>
+        <section id="starthere"></section>
+        <h5 class="subtitle avi2">CHOOSE A CARD (ANY CARD)... ✨</h5><br>
 
         <div class="cardwrapper" data-aos="fade-up">
             <div class="scene">
 
                 <div class="card2">
                     <div class="card__face card__face--front">
-                        <img src="assets/info3a.png">
+                        <a href="javascript:delay('#tower')"><img src="assets/info3a.png"></a>
                     </div>
                     <div class="card__face card__face--back">
                         <img src="assets/info5.png">
@@ -93,7 +93,7 @@ coded with love in an embarrassingly long amount of time by yours truly
 
                 <div class="card">
                     <div class="card__face card__face--front">
-                        <img src="assets/info3a.png">
+                        <a href="javascript:delay('#pentacles')"><img src="assets/info3a.png"></a>
                     </div>
                     <div class="card__face card__face--back">
                         <img src="assets/info6.png">
@@ -102,7 +102,7 @@ coded with love in an embarrassingly long amount of time by yours truly
 
                 <div class="card3">
                     <div class="card__face card__face--front">
-                        <img src="assets/info3a.png">
+                        <a href="javascript:delay('#wands')"><img src="assets/info3a.png"></a>
                     </div>
                     <div class="card__face card__face--back">
                         <img src="assets/info7.png">
@@ -112,7 +112,7 @@ coded with love in an embarrassingly long amount of time by yours truly
         </div><br><br>
     </div>
 
-    <div class="c6 divider2"></div>
+    <div class="c6 divider2"><section id="tower"></section></div>
 
     <div class="c3a">
         <div class="cardwrapper" data-aos="fade-up">
@@ -135,16 +135,12 @@ coded with love in an embarrassingly long amount of time by yours truly
         <p>It was <i>Destiny 2</i> that really made me realise that designing interfaces in games could be an art form. I played the beta at launch and spent around 1,000 hours in D2 over the course of 2018-2019.</p><br>
 
         <p>My proudest achievements? Being the <a href="https://dungeon.report/pgcr/3934532464" target="_blank" rel="noopener" class="link textLink tduoc-link">52nd in the world</a> to clear the Zero Hour dungeon, and two-manning Calus and Argos (less impressive than it sounds).
-        </p><br>
+        </p>
 
-        <!-- 
-        I've also created a few institutionally-funded, academic <a href="http://https://soundcloud.com/tduoc/" target="_blank" rel="noopener" class="link crisis-link textLink">projects</a> analysing design in historical contexts.</p><br>
-        <p>
-        -->
+    </div>
 
-    </div><br>
 
-    <div class="c6 divider2"></div>
+    <div class="c6 spacer"><section id="pentacles"></section></div>
 
     <div class="c3a">
         <div class="cardwrapper" data-aos="fade-up">
@@ -173,12 +169,12 @@ coded with love in an embarrassingly long amount of time by yours truly
         I’m also very passionate about creating communities through design! I founded <a href="http://tiny.cc/cdco" target="_blank" rel="noopener" class="link textLink sow-link">Claremont Design Co.</a> as a resource base in response to the lack of design opportunities available on campus. 
         </p><br>
 
-        <img alt="Claremont Design Co. picture" src="assets/avi3.jpeg" class="img grayscalehover" data-aos="fade-up"><br><br>
+        <img alt="Claremont Design Co. picture" src="assets/avi3.jpeg" class="img grayscalehover" data-aos="fade-up">
 
 
     </div>
 
-    <div class="c6 divider2"></div>
+    <div class="c6 spacer"><section id="wands"></section></div>
 
     <div class="c3a">
         <div class="cardwrapper" data-aos="fade-up">
@@ -242,7 +238,7 @@ coded with love in an embarrassingly long amount of time by yours truly
           card.classList.toggle("is-flipped");
         });
 
-        function animation_done() {
+        /*function animation_done() {
 
             if ($(".flip-card-inner:eq(0)").css("transform") !== "none" && $(".flip-card-inner:eq(1)").css(
                     "transform") !== "none" && $(".flip-card-inner:eq(2)").css("transform") !== "none") {
@@ -273,7 +269,13 @@ coded with love in an embarrassingly long amount of time by yours truly
             $(".flip-card-inner").off('click'); //unbind previous click function
             $(".flip-card-inner").on('click', load_video); //bind it to the new function
 
-        };
+        };*/
+    </script>
+
+    <script type="text/javascript">
+        function delay (URL) {
+            setTimeout( function() { window.location = URL }, 1000 );
+        }
     </script>
 
 </body>
