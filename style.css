@@ -468,7 +468,7 @@ video {
 
 .divider2 {
     border-top: 1px solid var(--gray-01);
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     margin-top: 1em;
 }
 
@@ -769,6 +769,12 @@ footer p a:hover {
     margin: 0 auto;
     justify-content: center;
     text-align: center;
+}
+
+.spacer {
+    border-top: 1px solid var(--gray-01);
+    margin-bottom: 5em;
+    margin-top: 5em;
 }
 
 .cardwrapper {
