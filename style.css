@@ -1063,6 +1063,27 @@ footer p a:hover {
     display: none;
   }
 
+    .testsummary-item {
+    width: 100%;
+}
+
+.labelcontainer {
+    display: inline-block;
+}
+
+.labeltag {
+    background-color: rgba(220, 220, 220, 0.4);
+    font-family: "IBM Plex Sans";
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+
+.appstore, .appstoreright {
+    width: 100%;
+    text-align: center;
+}
+
   .c3a {
       grid-column: 4 / 10;
   }
