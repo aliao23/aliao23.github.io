@@ -581,6 +581,16 @@ video {
     z-index:-1;
 }
 
+.exp-valorant:hover {
+    color: white!important;
+    transition-delay: 0.1s;
+}
+
+.exp-valorant:hover .mainlabeltag {
+    transition-delay: 0.1s;
+    color: white!important;
+}
+
 .exp-valorant:hover::after {
   transform: translateX(-8%) skew(-10deg);
   transition: transform 0.5s ease;
