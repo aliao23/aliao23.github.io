@@ -46,98 +46,160 @@ coded with love in an embarrassingly long amount of time by yours truly
 
             <div class="title">
                 <div>
-                    <h1 class="case-title">Valorant Mobile<br>
-                    <h3>UI/UX design for a mobile Valorant app.</h3>
+                    <h1 class="case-title">VALORANT Mobile<br>
+                    <h3>Bringing Riot’s tactical shooter to the small screen.</h3>
                 </div>
+            </div>
+
+            <div class="labelcontainer">
+                <div class="labeltag" style="background-color:#fff5e0;"><h4>UI/UX design</h4></div>
             </div>
         </div>
     </header>
     
     <div class="c12 main">
-        <div class="summary">
-            <div class="summary-section">
 
-                <div class="section summary-item">
+        <div class="section">
+            <a href='#valorant2'><img src="assets/valorant2.png" class='testft-img'></a>
+            <a href='#katsu' class='lightbox' id='valorant2'><span style="background-image:url('assets/valorant2.png')"></span></a><br><br>
+        </div>
+
+        <div class="testsummary">
+            <div class="testsummary-section">
+
+                <div class="section testsummary-item">
                     <h5 class="subtitle">Info</h5>
-                    <p>WIP</p>
+                    <p>Fall 2021</p>
                     <p>Personal project</p>
                 </div>
 
-                <div class="section summary-item">
-                    <p><a href="https://playvalorant.com/en-gb/" target="_blank" rel="noopener" class="link valorant-link textLink">Valorant</a> is a 5v5 character-based tactical shooter created by Riot Games.</p>
-                    <p>At its launch, it broke Twitch’s single-day viewership record with 34 million hours watched and a peak viewership of 1.7 million. Major esports organizations such as G2, TSM, 100 Thieves, and Cloud9 have since joined the competitive scene, with tournaments being held routinely via Riot’s First Strike series.</p>
+                <div class="section testsummary-item">
+                    <h5 class="subtitle">Methods</h5>
+                    <p>User interviews</p>
+                    <p>Wireframing</p>
+                    <p>User journey</p>
                 </div>
+
+                <div class="section testsummary-item">
+                    <h5 class="subtitle">Deliverables</h5>
+                    <p>Prototype of Valorant mobile</p>
+                </div>
+
             </div>
-        <img alt="Valorant mobile design" src="assets/valorant2.png" class="summary-section ft-img">
         </div>
+
     </div>
 
-    <div class="c6 divider"></div>
+    <div class="c6 divider"><section id="starthere"></section></div>
+
+    <div id="navbar">
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#state">State of play</a></li>
+          <li><a href="#interactions">Game inputs</a></li>
+          <li><a href="#mobile">Interaction explorations</a></li>
+          <li><a href="#first">Initial prototypes</a></li>
+          <li><a href="#prototyping">Prototyping, testing, iterating</a></li>
+          <li><a href="#reflecting">Reflecting</a></li>
+        </ul>
+      </nav>
+    </div>
+
 
     <div class="c6">
         <div class="section">
             <h5 class="subtitle">Intro</h5>
+                <p><a href="https://playvalorant.com/en-gb/" target="_blank" rel="noopener" class="link valorant-link textLink">VALORANT</a> is a 5v5 character-based tactical shooter created by Riot Games. At launch, it broke Twitch’s single-day viewership record with 34 million hours watched and a peak viewership of 1.7 million.</p><br>
                 <p>
-                I recently talked with <a href="/" onclick="return false;" rel="noopener" class="link keck">James Nguyen</a>, Director of Engineering at Riot, who encouraged me to try and develop a design for a potential mobile adaptation of Valorant in my own time. Even though I’m familiar with design processes in general, I’m fairly new to the field of UI/UX (I’m very used to just doing what I feel like fits best without ever explaining why).</p><br>
+                I’ve been talking with James Nguyen, Riot’s former Director of Engineering, who encouraged me to try and develop a design for a mobile adaptation in my own time.</p><br>
                 <p>
-                This project takes me out of my comfort zone, and focuses on how Riot Games could adapt one of its most successful franchises to the overall experience of the mobile format. In the latter half of the fall 2020 COVID semester, I began to create and iterate on prototypes using existing design systems from Valorant’s PC version and Riot’s Teamfight Tactics mobile app with two main questions in mind:
+                I began to explore flows with two questions in mind:
             </p>
             <ul>
-                <li><p>What core elements of the game experience need to be included?</p></li>
-                <li><p>What have other adapted mobile games in the market done to accommodate players?</p></li>
-            </ul>
-            <p>It's also important to divide up the work into three different portions:</p>
-            <ul>
-                <li><p>Login and onboarding</p></li>
-                <li><p>In-game menus (shop, game queue, friends list, collections)</p></li>
-                <li><p>Actual game interface</p></li>
+                <li><p>What <a href="" onclick="return false;" rel="noopener" class="link valorant-link">core elements</a> of the game experience need to be included?</p></li>
+                <li><p>What have <a href="" onclick="return false;" rel="noopener" class="link valorant-link">other adapted mobile games</a> done to accommodate players?</p></li>
             </ul>
         </div>
 
     <div class="c6 divider"></div>
 
         <div class="section">
-            <h5 class="subtitle"><a href="https://youtu.be/_tKd9Vcky14" target="_blank" rel="noopener" class="link valorant-link textLink">두둥등장</a> (DUDUDUNGA!)</h5>
-            <p>
-            I started by looking at one of Riot’s existing IPs — <a href='https://teamfighttactics.leagueoflegends.com/' target="_blank" rel="noopener" class="link valorant-link textLink">Teamfight Tactics</a>. TFT is distinct in that it’s a round-based, auto-battler strategy game, and the first of Riot’s franchises to be adapted to the mobile format (coming before <a href='https://wildrift.leagueoflegends.com/' target="_blank" rel="noopener" class="link valorant-link textLink">Wild Rift</a>, which recently launched in October 2020). While the mechanics are notably different from Valorant’s nature as an FPS, it’s interesting to take note of the splash screen and experience when the app is first launched.
-            </p><br><br>
-            <img src="https://freight.cargo.site/t/original/i/11924127aac960220a2cd06ede25eb49c53ff2a9dd54d77dffb37065bb3f5325/TFT-mobile.jpg" class='img'>
-            <br><br>
-            <p>
-            The launch screen has the gold TEAMFIGHT TACTICS stylized logo on a black background. However, the login option (after choosing “Riot Account” as the sign-in method) redirects to a screen that's stretched and doesn’t fit very well in landscape, and seems to be the default redirect when trying to log in from a mobile browser.
-            </p>
+            <h5 class="subtitle"><section id="state">State of play</section></h5>
+            <p>Unsurprisingly, <i>VALORANT</i> has <i>lots</i> of features and interactions.</p><br>
+            <a href='#valorant1'><img src="assets/valorant1.png" class='img'></a>
+            <a href='#katsu' class='lightbox' id='valorant1'><span style="background-image:url('assets/valorant1.png')"></span></a><br><br>
+            <div class='caption valorant-link'>A (simplified?) IA diagram of VALORANT's PC features</div><br>
+            <p>It’s unlikely that I’ll be able to fully "translate" all the features in the PC version to mobile, so I outlined my top three and prioritised working on the in-game interface (saving the others for future projects).</p>
+            <ul style="list-style:none;">
+                <li><h5 class="subtitle">1. In-game interface</h5>
+                <p>HUD, scoreboard, and buy screen accessible for players after they enter a game lobby</p></li><br>
+                <li><h5 class="subtitle">2. Home menus (for later)</h5>
+                <p>Launch screen after logging in. Access to the shop, game queue, friends list, missions, and so on</p></li><br>
+                <li><h5 class="subtitle">3. Career (for later)</h5><p>Match history, rank progress, lobby scoreboard</p></li>
+            </ul>
         </div>
+
+        <div class="c6 divider"></div>
+
+        <div class="section">
+            <h5 class="subtitle"><section id="interactions">Interactions and inputs</section></h5>
+            <img src="assets/v2a.png" class='img'>
+            <p>In <i>Valorant</i>, quick reactions and muscle memory are strongly rewarded.</p><br>
+            <p>There are <a href="" onclick="return false;" rel="noopener" class="link valorant-link">over 22 keys</a> that users are able to interact with ingame. The majority are movement-based (crouch, jump, run), with a heavy skew towards the left side of the keyboard since users are expected to use mice with their right hand.</p><br>
+            <p>It’s also necessary to keep the "special interactions" in mind, since actions such as planting the spike and interacting with objects on the map are core parts of gameplay.</p><br>
+            <img src="assets/v3.png" class='img'>
+            <div class='caption valorant-link'>PC HUD breakdown with screenshot from IDDQD’s stream</div><br>
+            <p>While perhaps less varied, mouse inputs are equally as important within the FPS genre: precision in aiming is key, as is aiming down sights and being able to look (and turn) around quickly to react to opponents.</p>
+        </div>
+
     <div class="c6 divider"></div>
 
         <div class="section">
-            <h5 class="subtitle">The PC login experience</h5>
-            <p>
-            This is pretty different from what we’re offered on the desktop client when logging in in general; although the League client is separate from the Valorant client, they both present a more cohesive, user-friendly experience which is greatly suited to the platform it’s on. Even though only a third of the client is taken up by the login menu itself, it presents multiple alternative login methods (Facebook, Google, Apple), an option to stay signed in, and the usual “Can’t Sign in?” and “Create Account” links.
-            </p><br><br>
-            <img src="https://freight.cargo.site/t/original/i/0c07998900488b03a2a8bb6beabdfc3a58e5b603050a4fb21b6a384d5e10d86e/Valorant-desktop.gif" class='img'>
-
-            <br><br>
-            <p>
-            It’s definitely possible (and easy on the surface level) to adapt this type of login experience to mobile — half of the work is already done. You can hold up your own mobile device to the PC client, and the login menu pretty much already fits your screen. With this in mind, I started drawing sketches of what an adapted mobile version would look like.
-            </p>
-            <br>
-            <img alt="low fidelity explorations" src="assets/sketch1.jpg" class="img">
-            <p>
-            For the sake of reducing visual clutter (and in keeping with the App Store’s increasingly strict guidelines regarding third-party login involvement), I only kept the same login options which TFT mobile already had: Riot Account and Apple Game Center. I also removed other components of the desktop client, such as the ? icon and the “Stay Signed In” option, since they wouldn’t offer much utility: the former only serves as a reminder of the <a href='https://support-leagueoflegends.riotgames.com/hc/en-us/articles/360037264394' class="link valorant-link textLink">Riot username change update</a>, and the latter is fairly redundant as mobile and tablet users tend to stay signed in more than PC users.
-            </p>
-            <br><br>
-            <img alt="login screens" src="assets/sketch2.jpg" class="img">
-            <br><br>
-            <p>
-            The greatest flaw of this one third design taken from the PC client is the lack of art/graphics which give Valorant the character and atmosphere that it has even before the game is launched. There’s some really striking <a href='https://www.artstation.com/artwork/W24nrQ' class="link valorant-link textLink">key art</a> created by Ke Su that’s featured in the other two thirds of the launcher that gives (in my experience) a sense of anticipation and appeal that keeps drawing you back to the game, and omitting it completely for a sole white screen login is a big loss.</p><br>
-            <img alt="wireframing" src="assets/valorant3.jpg" class="img">
-            <p><i>Portrait explorations</i></p><br>
-            <img alt="wireframing" src="assets/valorant4.jpg" class="img">
-            <p><i>Landscape explorations</i></p><br>
+            <h5 class="subtitle"><section id="mobile">Exploring mobile screen interactions</section></h5>
+            <img src="assets/v9.png" class='img'>
+            <p>I started with my own reach and grip, and then observed 10 other users.</p><br>
+            <p>I have particularly short thumbs (thanks, Dad), so I was only able to cover around maybe half to two thirds of the screen area.</p><br>
+            <video autoplay playsinline muted loop class="img"><source src="assets/v6.mp4" type="video/mp4"></video>
+            <div class='caption valorant-link'>My thumb coverage</div><br>
+            <p>Users felt uncomfortable involving index fingers: bringing them down covers a lot of valuable screen space and requires a shift in grip that makes holding the phone less stable.</p><br>
+            <img src="assets/v5.png" class='img'>
+            <video autoplay playsinline muted loop class="img"><source src="assets/v8.mp4" type="video/mp4"></video>
+            <div class='caption valorant-link'>Another user's thumb coverage</div><br>
+            <p>It’s therefore best to place key interactible elements such as shoot, move, etc. in the "natural" arc that thumbs cover in a horizontal grip.</p><br>
+            <p>It’s also easier for thumbs to bend inward rather than stretch outward; frequently used buttons should be closer to the bottom corners and edges rather than the top.</p><br>
+            <a href='#v10'><img src="assets/v10.png" class='img'></a>
+            <a href='#katsu' class='lightbox' id='v10'><span style="background-image:url('assets/v10.png')"></span></a><br>
+            <p>Mobile FPS games like <i>Genshin Impact</i> and <i>PUBG Mobile</i> place visual elements such as system status and settings buttons towards the top of the screen, and attack and move buttons near the bottom corners.</p><br>
+            <video autoplay playsinline muted loop class="img"><source src="assets/v11.mp4" type="video/mp4"></video>
+            <p>Claw grip?</p><br>
+            <p>Using volume button to aim down sights / shoot</p>
         </div>
 
+    <div class="c6 divider"></div>
+
         <div class="section">
-            <h3 class='case-title'>To be continued —</h3>
+            <h5 class="subtitle"><section id="first">Creating initial prototypes</section></h5>
+            <img src="assets/v4.png" class='img'>
+            <div class='caption valorant-link'>Initial intended space & feature distribution on mobile</div><br>
+            <p>
+            I mocked up a quick prototype to do some user testing. While I knew that the arc thumb range was the most natural, I wasn’t sure about button size or text/visual element legibility on screen.
+            </p><br>
+            <img alt="" src="assets/v1.png" class="img">
+            <img alt="" src="assets/v12.png" class="img">
+            <h5 class="subtitle">Initial user testing insights</h5>
+            <p>Unsurprisingly, there are a lot of tradeoffs that need to be made when designing a game for a mobile screen:</p>
+            <ul style="list-style: none;">
+                <li><h5 class="subtitle">1. Thumb positioning</h5>
+                    <p>Thumbs more naturally rest <a href="" onclick="return false;" rel="noopener" class="link valorant-link">near the middle of the screen</a> when held horizontally; the buttons for moving and shooting should therefore be higher up.</p><br>
+                </li>
+                <li><h5 class="subtitle">2. Fitts’ Law</h5>
+                    <p>While <a href="" onclick="return false;" rel="noopener" class="link valorant-link">bigger, closer targets are easier to hit</a> than smaller, more distanced targets, it’s probably best to deliberately ensure an extent of difficulty to reach given the game context where misclicking can cost you greatly.</p><br>
+                </li>
+                <li><h5 class="subtitle">3. Everyone’s different</h5>
+                    <p>While the overall grip style was consistent, users had <a href="" onclick="return false;" rel="noopener" class="link valorant-link">varying phone and thumb sizes</a>. To optimise for edge cases, it’s most likely better to design for larger thumb sizes on smaller screens.</p>
+                </li>
+            </ul><br><br>
+            <h5 class="subtitle">TO BE CONTINUED</h5>
         </div>
 
     </div>
@@ -148,9 +210,34 @@ coded with love in an embarrassingly long amount of time by yours truly
         </div>
         <div class="social">
             <a href="https://linkedin.com/in/aliao23" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="https://image.flaticon.com/icons/png/512/61/61109.png" class="icons"></a>
+            <a href="https://twitter.com/ava_liao" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="https://cdn-icons-png.flaticon.com/512/60/60580.png" class="icons"></a>
             <a href="https://medium.com/@liaoava" target="_blank" rel="noopener"><img alt="Medium icon" src="https://miro.medium.com/max/8978/1*s986xIGqhfsN8U--09_AdA.png" class="icons"></a>
         </div>
     </footer>
+
+
+    <!-- js, if i had any -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+          duration: 1000,
+        })
+    </script>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        window.addEventListener("scroll", function() {
+          var elementTarget = document.getElementById("starthere");
+          if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+            navbar.classList.add("sticky");
+            navbar.style.display = "block";
+          } else {
+            navbar.style.display = "none";
+            }
+        });
+    </script>
+
 
 </body>
 
