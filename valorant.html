@@ -27,8 +27,7 @@ coded with love in an embarrassingly long amount of time by yours truly
     <!-- js, if i had any -->
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="https://emoji-pics.s3.us-east-2.amazonaws.com/emoji-pics/apple/sparkles-apple.png"/>
-
+    <link rel="icon" type="image/x-icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/285/sparkles_2728.png"/>
 </head>
 
 <body class="grid">
@@ -77,12 +76,11 @@ coded with love in an embarrassingly long amount of time by yours truly
                     <h5 class="subtitle">Methods</h5>
                     <p>User interviews</p>
                     <p>Wireframing</p>
-                    <p>User journey</p>
                 </div>
 
                 <div class="section testsummary-item">
                     <h5 class="subtitle">Deliverables</h5>
-                    <p>Prototype of Valorant mobile</p>
+                    <p>High-fidelity VALORANT mobile prototype</p>
                 </div>
 
             </div>
@@ -97,16 +95,23 @@ coded with love in an embarrassingly long amount of time by yours truly
         <ul>
           <li><a href="#state">State of play</a></li>
           <li><a href="#interactions">Game inputs</a></li>
-          <li><a href="#mobile">Interaction explorations</a></li>
+          <li><a href="#mobile">Interaction tests</a></li>
+          <li><a href="#players">Player interviews</a></li>
+          <li><a href="#market">Market analysis</a></li>
           <li><a href="#first">Initial prototypes</a></li>
-          <li><a href="#iterating">Testing & iterating</a></li>
-          <li><a href="#reflecting">Reflecting</a></li>
         </ul>
       </nav>
     </div>
 
 
     <div class="c6">
+        <div class="section">
+            <h5 class="subtitle">Idea</h5>
+            <h3>How might we adapt a mechanics-intensive PC shooter to a mobile format?</h3>
+        </div>
+
+        <div class="c6 divider"></div>
+
         <div class="section">
             <h5 class="subtitle">Intro</h5>
                 <p><a href="https://playvalorant.com/en-gb/" target="_blank" rel="noopener" class="link valorant-link textLink">VALORANT</a> is a 5v5 character-based tactical shooter created by Riot Games. At launch, it broke Twitch’s single-day viewership record with 34 million hours watched and a peak viewership of 1.7 million.</p><br>
@@ -121,10 +126,10 @@ coded with love in an embarrassingly long amount of time by yours truly
             </ul>
         </div>
 
-    <div class="c6 divider"></div>
+    <div class="c6 divider"><section id="state"></section></div>
 
         <div class="section">
-            <h5 class="subtitle"><section id="state">State of play</section></h5>
+            <h5 class="subtitle">State of play</h5>
             <p>Unsurprisingly, <i>VALORANT</i> has <i>lots</i> of features and interactions.</p><br>
             <a href='#valorant1'><img src="assets/valorant1.png" class='img'></a>
             <a href='#katsu' class='lightbox' id='valorant1'><span style="background-image:url('assets/valorant1.png')"></span></a><br><br>
@@ -139,58 +144,78 @@ coded with love in an embarrassingly long amount of time by yours truly
             </ul>
         </div>
 
-        <div class="c6 divider"></div>
+        <div class="c6 divider"><section id="interactions"></section></div>
 
         <div class="section">
-            <h5 class="subtitle"><section id="interactions">Interactions and inputs</section></h5>
+            <h5 class="subtitle">Interactions and inputs</h5>
             <img src="assets/v2a.png" class='img'>
-            <p>In <i>Valorant</i>, quick reactions and muscle memory are strongly rewarded.</p><br>
+            <p>In <i>Valorant</i>, quick reactions and muscle memory are rewarded.</p><br>
             <p>There are <a href="" onclick="return false;" rel="noopener" class="link valorant-link">over 22 keys</a> that users are able to interact with ingame. The majority are movement-based (crouch, jump, run), with a heavy skew towards the left side of the keyboard since users are expected to use mice with their right hand.</p><br>
-            <p>It’s also necessary to keep the "special interactions" in mind, since actions such as planting the spike and interacting with objects on the map are core parts of gameplay.</p><br>
+            <p>"Special interactions," such as planting the spike and interacting with objects on the map, are also core parts of the objective-focused gameplay.</p><br>
             <img src="assets/v3.png" class='img'>
-            <div class='caption valorant-link'>PC HUD breakdown with screenshot from IDDQD’s stream</div><br>
-            <p>While perhaps less varied, mouse inputs are equally as important within the FPS genre: precision in aiming is key, as is aiming down sights and being able to look (and turn) around quickly to react to opponents.</p>
+            <div class='caption valorant-link'>PC HUD breakdown with screenshot from IDDQD</div><br>
+            <p>While perhaps less varied, mouse inputs are equally as important within the FPS genre. Precision in aiming is key, as is aiming down sights and being able to look (and turn) around quickly to react to opponents.</p>
         </div>
 
-    <div class="c6 divider"></div>
+    <div class="c6 divider"><section id="mobile"></section></div>
 
         <div class="section">
-            <h5 class="subtitle"><section id="mobile">Exploring mobile screen interactions</section></h5>
+            <h5 class="subtitle">Exploring mobile screen interactions</h5>
             <img src="assets/v9.png" class='img'>
-            <p>I started with my own reach and grip, and then observed 10 other users.</p><br>
-            <p>I have particularly short thumbs (thanks, Dad), so I was only able to cover around maybe half to two thirds of the screen area.</p><br>
-            <video autoplay playsinline muted loop class="img"><source src="assets/v6.mp4" type="video/mp4"></video>
-            <div class='caption valorant-link'>My thumb coverage</div><br>
-            <p>Users felt uncomfortable involving index fingers: bringing them down covers a lot of valuable screen space and requires a shift in grip that makes holding the phone less stable.</p><br>
-            <img src="assets/v5.png" class='img'>
-            <video autoplay playsinline muted loop class="img"><source src="assets/v8.mp4" type="video/mp4"></video>
-            <div class='caption valorant-link'>Another user's thumb coverage</div><br>
-            <p>It’s therefore best to place key interactible elements such as shoot, move, etc. in the "natural" arc that thumbs cover in a horizontal grip.</p><br>
-            <p>It’s also easier for thumbs to bend inward rather than stretch outward; frequently used buttons should be closer to the bottom corners and edges rather than the top.</p><br>
+            <p>I started with my own reach and grip, and then observed 10 other users. I have particularly short thumbs (thanks, Dad), so I was only able to cover around maybe half to two thirds of the screen area.</p><br>
+            <video autoplay playsinline muted loop class="img"><source src="assets/v6.mp4" type="video/mp4"></video><br>
+            <h5 class="subtitle">Key takeaways</h5>
+            <ul style="list-style: none;">
+                <li><h5 class="subtitle">1. No index fingers?</h5>
+                    <p>The majority of casual users felt uncomfortable bringing their index fingers down. It covers a lot of valuable screen space and requires a shift in grip that makes holding the phone less stable.</p><br>
+                </li>
+                <li><h5 class="subtitle">2. There is a natural arc</h5>
+                    <p>Key interactible elements such as shoot, move, etc. should therefore be in the "natural" arc that thumbs cover in a horizontal grip.</p><br>
+                    <video autoplay playsinline muted loop class="img"><source src="assets/v8.mp4" type="video/mp4"></video>
+                </li>
+                <li><h5 class="subtitle">3. Thumb flex</h5>
+                    <p>It’s easier for thumbs to bend inward rather than stretch outward; frequently used buttons should be closer to the bottom corners and edges rather than the top.</p>
+                    <img src="assets/v5.png" class='img'>
+                </li>
+            </ul>
+            <p>With a rough idea of what the norm was for mobile grips, I moved on to player interviews.</p>
+        </div>
+
+        <div class="c6 divider"><section id="players"></section></div>
+
+        <div class="section">
+            <h5 class="subtitle">Player interviews</h5>
+            <p>Graphic placeholder</p><br>
+            <h5 class="subtitle">Personas</h5>
+        </div>
+
+        <div class="c6 divider"><section id="market"></section></div>
+
+        <div class="section">
+            <h5 class="subtitle">Market analysis</h5><br>
+            <p>Mobile FPS games like <i>Genshin Impact</i> and <i>PUBG Mobile</i> place visual elements such as system status and settings buttons towards the top of the screen, and attack and move buttons near the bottom corners.</p><br>
             <a href='#v10'><img src="assets/v10.png" class='img'></a>
             <a href='#katsu' class='lightbox' id='v10'><span style="background-image:url('assets/v10.png')"></span></a><br>
-            <p>Mobile FPS games like <i>Genshin Impact</i> and <i>PUBG Mobile</i> place visual elements such as system status and settings buttons towards the top of the screen, and attack and move buttons near the bottom corners.</p><br>
+            <p><i>PUBG Mobile</i> also lets the user customise their own input style, resulting in some unorthodox ways of interaction like the "claw grip."</p><br>
             <video autoplay playsinline muted loop class="img"><source src="assets/v11.mp4" type="video/mp4"></video>
-            <p>Claw grip?</p><br>
-            <p>Using volume button to aim down sights / shoot</p>
         </div>
 
-    <div class="c6 divider"></div>
+    <div class="c6 divider"><section id="first"></section></div>
 
         <div class="section">
-            <h5 class="subtitle"><section id="first">Creating initial prototypes</section></h5>
+            <h5 class="subtitle">Creating initial prototypes</h5>
             <img src="assets/v4.png" class='img'>
             <div class='caption valorant-link'>Initial intended space & feature distribution on mobile</div><br>
             <p>
-            I mocked up a quick prototype to do some user testing. While I knew that the arc thumb range was the most natural, I wasn’t sure about button size or text/visual element legibility on screen.
+            I mocked up a quick prototype to do some field testing. While I knew that the arc thumb range was the most natural, I wasn’t sure about button size or text/visual element legibility on screen.
             </p><br>
             <img alt="" src="assets/v1.png" class="img">
-            <img alt="" src="assets/v12.png" class="img">
-            <h5 class="subtitle">Initial user testing insights</h5>
+            <h5 class="subtitle">User testing insights</h5>
             <p>Unsurprisingly, there are a lot of tradeoffs that need to be made when designing a game for a mobile screen:</p>
             <ul style="list-style: none;">
                 <li><h5 class="subtitle">1. Thumb positioning</h5>
-                    <p>Thumbs more naturally rest <a href="" onclick="return false;" rel="noopener" class="link valorant-link">near the middle of the screen</a> when held horizontally; the buttons for moving and shooting should therefore be higher up.</p><br>
+                    <p>Thumbs more naturally rest <a href="" onclick="return false;" rel="noopener" class="link valorant-link">near the middle of the screen</a> when held horizontally; the buttons for moving and shooting should therefore be higher up.</p>
+                    <img alt="" src="assets/v12.png" class="img">
                 </li>
                 <li><h5 class="subtitle">2. Fitts’ Law</h5>
                     <p>While <a href="" onclick="return false;" rel="noopener" class="link valorant-link">bigger, closer targets are easier to hit</a> than smaller, more distanced targets, it’s probably best to deliberately ensure an extent of difficulty to reach given the game context where misclicking can cost you greatly.</p><br>
@@ -198,7 +223,10 @@ coded with love in an embarrassingly long amount of time by yours truly
                 <li><h5 class="subtitle">3. Everyone’s different</h5>
                     <p>While the overall grip style was consistent, users had <a href="" onclick="return false;" rel="noopener" class="link valorant-link">varying phone and thumb sizes</a>. To optimise for edge cases, it’s most likely better to design for larger thumb sizes on smaller screens.</p>
                 </li>
-            </ul><br><br>
+            </ul><br>
+            <h5 class="subtitle">Iterating</h5>
+            <img alt="" src="assets/v14.png" class="img">
+            <br><br>
             <h5 class="subtitle">TO BE CONTINUED</h5>
         </div>
 
