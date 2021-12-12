@@ -77,6 +77,7 @@ p, li, featurename {
   font-size: 18px;    
   margin-bottom: 0.75em;
   font-style: italic;
+  line-height: 1.5em;
 }
 
 sup, sub {
@@ -94,7 +95,7 @@ a {
     transition: 0.28s;
 }
 
-h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, i::selection, sub::selection, sup::selection, featurename::selection, li::selection, a::selection, span::selection, br::selection, strong::selection, img::selection, html::selection {
+h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, i::selection, sub::selection, sup::selection, featurename::selection, li::selection, a::selection, span::selection, br::selection, strong::selection, img::selection, html::selection, .caption::selection {
     background: rgba(218,138,177,0.1);
 }
 @media screen and (min-width: 450px) {
@@ -645,6 +646,31 @@ video {
 .exp-connect:hover::before {
   transform: translateY(-50%);
 }
+
+.exp-tt {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.exp-tt::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(200deg,
+    #15d1af,
+    #6DBAEB,
+    #9c9cff
+  );
+  transition: transform 0.5s;
+  z-index: -1;
+}
+.exp-tt:hover::before {
+  transform: translateY(-50%);
+}
+
 
 /*
 .exp-caco3 {
