@@ -660,8 +660,8 @@ video {
   width: 200%;
   height: 200%;
   background: linear-gradient(200deg,
-    #15d1af,
-    #6DBAEB,
+    #2af7d2,
+    #8ad1ff,
     #9c9cff
   );
   transition: transform 0.5s;
