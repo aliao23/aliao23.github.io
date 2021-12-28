@@ -1268,3 +1268,102 @@ footer p a:hover {
 
     /* END STICKY MENU */
 }
+
+@media screen and (min-width: 1920px) {
+    /* GLOBAL */
+
+    a.textLink {
+    border-bottom: 0.125rem dotted;
+    display: inline-block;
+    line-height: 1.2;
+}
+
+    .content-web {
+        display: inline;
+    }
+    
+    .h1c {
+        font-size: 80px;
+    }
+
+    h5 {
+        font-size: 28px;
+    }
+
+    h6 {
+        font-size: 24px;
+    }
+
+    .feature-product, .feature-logo {
+        height: 44%;
+        z-index: -1;
+        margin-bottom: 30%;
+    }
+
+    /* head */
+    .selected {
+        font-weight: 500;
+        color: var(--black);
+    }
+    
+    .c6-left > p {
+        font-size: 28px;
+    }
+
+    .icons {
+        display: inline-block;
+        margin-left: 1.5vw;
+        height: 2em;
+        opacity: 0.45;
+        transition: 0.5s;
+    }
+
+    /* case study */
+    .summary {
+        grid-template-columns: 50% 50%;
+    }
+    
+    /* info */
+    .avi {
+        margin-top: auto;
+        margin-bottom: auto;
+        height: 25em;
+        width: 25em;
+    }
+    
+    /* BEGIN STICKY MENU */
+
+    .main-menu {
+      position: relative;
+      height: 100%;
+      top: 33%;
+      width:300px;
+      float: left;
+    }
+
+    nav ul, nav li {
+      padding-left: 10%;
+      list-style: none;
+      font-family: "Lora";
+      font-size: 14px;
+      line-height: 2em;
+    }
+
+    /* Highlight when on Section*/
+    .main-menu li:hover>a {
+      opacity: 0.5;
+    }
+
+    /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+    .sticky {
+      position: fixed;
+      top: 0;
+      height: 100%;
+    }
+
+    #navbar {
+      height: 100%;
+    }
+
+    /* END STICKY MENU */
+}
