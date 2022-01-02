@@ -1283,17 +1283,13 @@ footer p a:hover {
     }
     
     .h1c {
-        font-size: 80px;
-    }
-
-    h6 {
-        font-size: 24px;
+        font-size: 84px;
     }
 
     .feature-product, .feature-logo {
-        height: 44%;
+        height: 48%;
         z-index: -1;
-        margin-bottom: 30%;
+        margin-bottom: 24%;
     }
 
     /* head */
