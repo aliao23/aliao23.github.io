@@ -271,10 +271,12 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
 
 .appstore video{
     width: 80%;
+    height: 40em;
 }
 
 .appstoreright video {
     width: 80%;
+    height: 40em;
 }
 
 .appstore:after, .appstoreright:after {
@@ -567,7 +569,7 @@ video {
 }
 
 .exp-valorant {
-  background-color: #ff4655;
+  background-color: #ff616e;
   overflow: hidden;
 }
 
@@ -597,6 +599,31 @@ video {
   transition: transform 0.5s ease;
   z-index:1;
 }
+
+.exp-hpe {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.exp-hpe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(200deg,
+    #43ea80,
+    #7bedba,
+    #38f8d4
+  );
+  transition: transform 0.5s;
+  z-index: -1;
+}
+.exp-hpe:hover::before {
+  transform: translateY(-50%);
+}
+
 
 .exp-caco3 {
   position: relative;
@@ -724,7 +751,7 @@ video {
   left: 0;
   width: 200%;
   height: 200%;
-  background: linear-gradient(200deg, #dfedbb, #83dec3, #76b6c2);
+  background: linear-gradient(200deg, #ffe28a, #dfedbb, #83dec3);
   transition: transform 0.5s;
   z-index: -1;
 }
@@ -1032,6 +1059,10 @@ footer p a:hover {
     color: #f0a105;
 }
 
+.hpe-link {
+    color: #00b384;
+}
+
 .tduoc-link {
     color: #6869df;
 }
@@ -1099,8 +1130,32 @@ footer p a:hover {
     display: none;
   }
 
+  h1c {
+    visibility: hidden;
+  }
+
+  h5 {
+    visibility: hidden;
+  }
+
+  .mainlabelcontainer {
+    visibility: hidden;
+  }
+
+    .feature-logo {
+        height: 40%;
+        z-index: -1;
+        margin-bottom: 0;
+    }
+
+    .feature-product {
+        height: 40%;
+        z-index: -1;
+        margin-bottom: 0;
+    }
+
     .testsummary-item {
-    width: 100%;
+    width: 80%;
 }
 
 .labelcontainer {
