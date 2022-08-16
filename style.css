@@ -1047,6 +1047,10 @@ footer p a:hover {
     cursor: url("https://cdn.discordapp.com/attachments/272131508049805312/788551214375632906/wink1.png"), auto;
 }
 
+.secret:hover {
+    cursor: url("assets/cursorlock.png"), auto;
+}
+
 .cmc-link {
     color: #98012d;
 }
@@ -1065,6 +1069,10 @@ footer p a:hover {
 
 .tduoc-link {
     color: #6869df;
+}
+
+.uxif-link {
+    color: #FF6F00;
 }
 
 .hist-link {
