@@ -775,7 +775,7 @@ video {
   left: 0;
   width: 200%;
   height: 200%;
-  background: linear-gradient(200deg, #fac61b, #fca028, #e76438, #e34319);
+  background: linear-gradient(200deg, #FDF112, #F5CC4C, #FEA50B, #F57830);
   transition: transform 0.5s;
   z-index: -1;
 }
