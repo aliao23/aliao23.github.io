@@ -568,8 +568,56 @@ video {
     border-radius: 0.5em;
 }
 
+.v1 {
+    display: none;
+    z-index: 99;
+    position: absolute;
+}
+
+.exp-valorant2 {
+  background-color: #0f1923; 
+  overflow: hidden;
+  color: white;
+}
+
+.exp-valorant2 .mainlabeltag {
+    color: white!important;
+}
+
+.exp-valorant2::after {
+    content: '';
+    transform: translateX(-200%) skew(-10deg);
+    top:0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background-color: #ff4655;  
+    z-index:-1;
+}
+
+.exp-valorant2:hover {
+    color: white!important;
+    transition-delay: 0.1s;
+}
+
+.exp-valorant2:hover .v1 {
+    display: inline;
+    transition-delay: 0.1s;
+}
+
+.exp-valorant2:hover .mainlabeltag {
+    transition-delay: 0.1s;
+    color: white!important;
+}
+
+.exp-valorant2:hover::after {
+  transform: translateX(-8%) skew(-10deg);
+  transition: transform 0.5s ease;
+  z-index:1;
+}
+
 .exp-valorant {
-  background-color: #ff616e;
+  background-color: #ff5757;
   overflow: hidden;
 }
 
