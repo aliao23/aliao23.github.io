@@ -1210,6 +1210,13 @@ footer p a:hover {
         margin-bottom: 0;
     }
 
+    .testft-img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .testsummary-item {
     width: 80%;
 }
