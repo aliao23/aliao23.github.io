@@ -591,7 +591,7 @@ video {
     left: -10%;
     width: 120%;
     height: 100%;
-    background-color: #ff4655;  
+    background-color: #EB0029;  
     z-index:-1;
 }
 
@@ -1190,7 +1190,7 @@ footer p a:hover {
     visibility: hidden;
   }
 
-  .exp-wrapper h5 {
+  .exp-wrapperh5 {
     visibility: hidden;
   }
 
