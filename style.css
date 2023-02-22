@@ -1183,6 +1183,82 @@ footer p a:hover {
     display: inherit;
 }
 
+@media screen and (max-width: 1100px) {
+
+  .main-menu, #navbar {
+    visibility: hidden;
+    display: none;
+  }
+
+  h1c {
+    visibility: hidden;
+  }
+
+  .exp-wrapper h5 {
+    visibility: hidden;
+  }
+
+  .mainlabelcontainer {
+    visibility: hidden;
+  }
+
+    .feature-logo {
+        height: 40%;
+        z-index: -1;
+        margin-bottom: 0;
+    }
+
+    .feature-product {
+        height: 40%;
+        z-index: -1;
+        margin-bottom: 0;
+    }
+
+    .testft-img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .testsummary-item {
+    width: 80%;
+}
+
+.labelcontainer {
+    display: inline-block;
+}
+
+.labeltag {
+    background-color: rgba(220, 220, 220, 0.4);
+    font-family: "IBM Plex Sans";
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+}
+
+.appstore, .appstoreright {
+    width: 100%;
+    text-align: center;
+}
+
+  .c3a {
+      grid-column: 4 / 10;
+  }
+  .c3b {
+      grid-column: 4 / 10;
+      margin-top: 2em;
+  }
+
+  .scene {
+      /*
+      width: 100%;
+      height: 200px;
+      */
+      perspective: 1000px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .main-menu, #navbar {
     visibility: hidden;
