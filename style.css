@@ -494,6 +494,8 @@ video {
     flex-direction: column;
     position: relative;
     width: 100%;
+    border-radius: 1em;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.1);
 }
 .exp:after {
     content: "";
