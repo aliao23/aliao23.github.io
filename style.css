@@ -556,6 +556,18 @@ video {
     border-radius: 0.5em;
 }
 
+.mainlabeltag-ALT {
+    background: linear-gradient(180deg, rgba(255,255,255,.15) 30%, rgba(255,255,255,0) 100%);
+    font-family: "IBM Plex Sans";
+    color: black;
+    padding: 0.8em;
+    margin-right: 1.5em;
+    border-radius: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(8, 7, 16, 0.05);
+}
+
 .labelcontainer {
     display: flex;
     flex-direction: row;
