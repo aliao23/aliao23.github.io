@@ -501,6 +501,7 @@ video {
     content: "";
     display: block;
     padding-bottom: 100%;
+    transform: translateZ(0);
 }
 
 .exp h1c {
