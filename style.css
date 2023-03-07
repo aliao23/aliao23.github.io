@@ -15,14 +15,14 @@
 h1 {
     font-family: 'Lora', serif;
     font-size: 36px;    
-    font-weight: bold;
+    font-weight: 400;
     line-height: inherit;
     margin: 0;
 }
 
 h1c {
-    font-family: 'IBM Plex Sans', serif;
-    font-size: 36px;    
+    font-family: 'Lexend', serif;
+    font-size: 32px;    
     font-weight: 500;
     line-height: inherit;
     margin: 0;
@@ -37,11 +37,20 @@ h2 {
 }
 h3 {
     font-family: 'IBM Plex Sans';
-    font-size: 18px;    
     font-weight: normal;
+    font-size: 30px;    
     line-height: inherit;
     margin: 0;
 }
+
+/* 
+.section h3 {
+    font-family: Lora;
+    font-weight: 200;
+    font-style: italic;   
+}
+*/
+
 h4 {
     font-family: 'IBM Plex Sans';
     font-size: 18px;
@@ -78,6 +87,7 @@ p, li, featurename {
   margin-bottom: 0.75em;
   font-weight: 500;
   line-height: 1.5em;
+  text-align: left;
 }
 
 sup, sub {
@@ -111,7 +121,7 @@ h1::selection, h1c::selection, h2::selection, h3::selection, h4::selection, h5::
         font-size: calc(24px + 30 * ((100vw - 320px) / (680)));
     }
     h3 {
-        font-size: calc(18px + 18 * ((100vw - 320px) / (680)));
+        font-size: calc(20px + 18 * ((100vw - 320px) / (680)));
     }
     h4 {
         font-size: calc(18px + 6 * ((100vw - 320px) / (680)));
@@ -370,7 +380,7 @@ video {
     -webkit-user-drag: none;
 }
 .section {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .section p{
@@ -397,6 +407,7 @@ video {
 }
 .nav {
     line-height: 3em;
+    position: initial;
 }
 .option {
     display: inline;
@@ -478,7 +489,7 @@ video {
 /* main */
 .main {
     margin-top: 3em;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 .content {
     display: grid;
@@ -497,6 +508,7 @@ video {
     border-radius: 1em;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.1);
 }
+
 .exp:after {
     content: "";
     display: block;
@@ -529,7 +541,8 @@ video {
     justify-content: center;
     align-items: center;
     text-align: left;
-    z-index: 2;
+    z-index: 2!important;
+
 }
 
 .exp-wrapper {
@@ -549,16 +562,8 @@ video {
 }
 
 .mainlabeltag {
-    background-color: rgba(250, 250, 250, 0.3);
-    font-family: "IBM Plex Sans";
-    color: black;
-    padding: 0.8em;
-    margin-right: 1.5em;
-    border-radius: 0.5em;
-}
-
-.mainlabeltag-ALT {
-    background: linear-gradient(180deg, rgba(255,255,255,.15) 30%, rgba(255,255,255,0) 100%);
+    /*background-color: rgba(220, 220, 220, 0.1)*/
+    background-color: rgba(230, 230, 230, 0.1);
     font-family: "IBM Plex Sans";
     color: black;
     padding: 0.8em;
@@ -581,6 +586,34 @@ video {
     box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.05);
 }
 
+.mainlabeltag-ALT {
+    background: linear-gradient(180deg, rgba(255,255,255,.15) 30%, rgba(255,255,255,0) 100%);
+    font-family: "IBM Plex Sans";
+    color: black;
+    padding: 0.8em;
+    margin-right: 1.5em;
+    border-radius: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(8, 7, 16, 0.05);
+}
+
+.mainlabeltag-LINEARAPP {
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+    background: linear-gradient(180deg, rgba(255,255,255,.15) 30%, rgba(255,255,255,0) 100%);
+    font-family: "IBM Plex Sans";
+    color: black;
+    padding: 0.8em;
+    margin-right: 1.5em;
+    border-radius: 0.5em;
+    /*border: 1px solid rgba(255, 255, 255, 0.05);*/
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    /*border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);*/
+    backdrop-filter: blur(10px);
+    /*box-shadow: 0 0 20px rgba(8, 7, 16, 0.05);*/
+}
+
 .labelcontainer {
     display: flex;
     flex-direction: row;
@@ -590,7 +623,7 @@ video {
 .labeltag {
     background-color: rgba(220, 220, 220, 0.4);
     font-family: "IBM Plex Sans";
-    padding: 1em;
+    padding: 0.8em;
     margin-right: 2em;
     border-radius: 0.5em;
 }
@@ -643,6 +676,7 @@ video {
   transform: translateX(-8%) skew(-10deg);
   transition: transform 0.5s ease;
   z-index:1;
+
 }
 
 .exp-valorant {
@@ -682,6 +716,7 @@ video {
   z-index: 1;
   overflow: hidden;
 }
+
 .exp-hpe::before {
   content: "";
   position: absolute;
@@ -696,11 +731,12 @@ video {
   );
   transition: transform 0.5s;
   z-index: -1;
+
 }
 .exp-hpe:hover::before {
   transform: translateY(-50%);
-}
 
+}
 
 .exp-caco3 {
   position: relative;
@@ -809,8 +845,9 @@ video {
 
 
 .exp-archive {
-    background: #edeeee;
+    background: #eeeeee;
 }
+
 .exp-yb {
     background: #223b1b;
 }
@@ -1081,7 +1118,7 @@ footer p a:hover {
 
 /* gradients */
 .keck {
-    background: -webkit-linear-gradient(left,  #24d49e 0%, #56b1d1 50%, #9924e0 100%); 
+    background: -webkit-linear-gradient(105deg,  #24d49e 0%, #56b1d1 50%, #9924e0 100%); 
     /* background-image: linear-gradient(45deg, #38a886 0%, #2f98ad 33.33%, #205791 66.67%, #FF41A0 100%); */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1176,10 +1213,11 @@ footer p a:hover {
 
 .case-title {
     color: #0f1923;
-    line-height: 2em;
+    line-height: 1.2em;
     /*font-family: 'IBM Plex Sans';
     font-weight: 600;*/
     font-weight: 400;
+    padding-bottom: .5em;
 }
 
 .sow-link {
@@ -1212,8 +1250,74 @@ footer p a:hover {
     display: inherit;
 }
 
+@media screen and (max-width: 450px) {
+
+    .hidden-mobile {
+        display: none;
+    }
+
+/*
+    .header {
+        padding-top: 1em;
+        background: rgba(255,255,255,.8);
+        backdrop-filter: blur(5px);
+        border-bottom: 5px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 50px white;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;c
+    }
+*/
+    .nav {
+        position: absolute;
+        right: 0px;   
+    }
+
+    .option {
+        margin-left: 5vw;
+    }
+
+    .case-title {
+        line-height: 1.2em;
+        padding-bottom: .5em;
+    }
+
+    .labeltag {
+        background-color: rgba(220, 220, 220, 0.4);
+        font-family: "IBM Plex Sans";
+        padding: .5em;
+        border-radius: 0.5em;
+    }
+
+    .ft-img {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main {
+        margin-top: 3em;
+        margin-bottom: 0em;
+    }
+
+    ul {
+        padding-left: 0em;
+    }
+
+    footer {
+        line-height: 1em;
+    }
+
+    .icons {
+        height: 1.5em;
+    }
+
+}
+
 @media screen and (max-width: 1100px) {
-
   .main-menu, #navbar {
     visibility: hidden;
     display: none;
@@ -1251,100 +1355,17 @@ footer p a:hover {
     }
 
     .testsummary-item {
-    width: 80%;
-}
-
-.labelcontainer {
-    display: inline-block;
-}
-
-.labeltag {
-    background-color: rgba(220, 220, 220, 0.4);
-    font-family: "IBM Plex Sans";
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-}
-
-.appstore, .appstoreright {
-    width: 100%;
-    text-align: center;
-}
-
-  .c3a {
-      grid-column: 4 / 10;
-  }
-  .c3b {
-      grid-column: 4 / 10;
-      margin-top: 2em;
-  }
-
-  .scene {
-      /*
-      width: 100%;
-      height: 200px;
-      */
-      perspective: 1000px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .main-menu, #navbar {
-    visibility: hidden;
-    display: none;
-  }
-
-  h1c {
-    visibility: hidden;
-  }
-
-  .exp-wrapper h5 {
-    visibility: hidden;
-  }
-
-  .mainlabelcontainer {
-    visibility: hidden;
-  }
-
-    .feature-logo {
-        height: 40%;
-        z-index: -1;
-        margin-bottom: 0;
+        width: 80%;
     }
 
-    .feature-product {
-        height: 40%;
-        z-index: -1;
-        margin-bottom: 0;
+    .labelcontainer {
+        display: inline-block;
     }
 
-    .testft-img {
+    .appstore, .appstoreright {
         width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        text-align: center;
     }
-
-    .testsummary-item {
-    width: 80%;
-}
-
-.labelcontainer {
-    display: inline-block;
-}
-
-.labeltag {
-    background-color: rgba(220, 220, 220, 0.4);
-    font-family: "IBM Plex Sans";
-    padding: 1em;
-    margin-bottom: 1em;
-    border-radius: 0.5em;
-}
-
-.appstore, .appstoreright {
-    width: 100%;
-    text-align: center;
-}
 
   .c3a {
       grid-column: 4 / 10;
@@ -1385,7 +1406,7 @@ footer p a:hover {
     }
     
     .hero {
-        margin-bottom: 3em;
+        margin-bottom: 0em;
     }
     .header {
         margin-bottom: 1.5em;
