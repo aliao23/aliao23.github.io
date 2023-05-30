@@ -1234,6 +1234,11 @@ footer p a:hover {
 .valorant-link {
     color: #ff4655;
 }
+
+.valorant2-link:hover {
+    color: #ff4655;
+}
+
 .caco3-link {
     color: #da85af;
 }
