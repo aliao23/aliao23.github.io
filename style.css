@@ -25,7 +25,7 @@ h1 {
 h1c {
     font-family: 'Instrument Sans', 'IBM Plex Sans', serif;
     font-size: 32px;    
-    font-weight: 500;
+    font-weight: 600;
     line-height: inherit;
     margin: 0;
 }
@@ -1585,8 +1585,8 @@ footer p a:hover {
     nav ul, nav li {
       padding-left: 10%;
       list-style: none;
-      font-family: "Lora";
-      font-size: 14px;
+      font-family: "Instrument Sans";
+      font-size: 16px;
       line-height: 2em;
     }
 
