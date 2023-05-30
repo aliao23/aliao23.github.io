@@ -1222,11 +1222,8 @@ footer p a:hover {
 
 .case-title {
     color: #0f1923;
-    line-height: 1.2em;
-    /*font-family: 'IBM Plex Sans';
-    font-weight: 600;*/
-    font-weight: 400;
-    padding-bottom: .5em;
+    font-family: 'Instrument Serif';
+    padding-bottom: .2em;
 }
 
 .sow-link {
