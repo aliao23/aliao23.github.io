@@ -18,7 +18,7 @@ h1 {
     font-family: 'Instrument Sans', 'IBM Plex Sans', serif;
     font-size: 36px;    
     font-weight: 400;
-    line-height: inherit;
+    line-height: 1.4em;
     margin: 0;
 }
 
