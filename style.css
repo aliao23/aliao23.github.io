@@ -83,6 +83,12 @@ p, li, featurename {
     margin: 0;
 }
 
+p i {
+    font-family: 'Instrument Serif';
+    font-size: 1.05em;
+    padding: 0 1px 0 1px;
+}
+
 .caption {
   font-family: 'Instrument Sans', 'IBM Plex Sans', serif;
   font-size: 18px;    
