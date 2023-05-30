@@ -1224,6 +1224,7 @@ footer p a:hover {
     color: #0f1923;
     font-family: 'Instrument Serif';
     padding-bottom: .2em;
+    font-size: 80px;!important
 }
 
 .sow-link {
